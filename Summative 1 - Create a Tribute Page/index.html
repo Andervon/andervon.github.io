@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="summative1.css">
+    <title>The Hidden Networks Project</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</head>
+<body>
+    <div id="main">
+        
+		<h1 id="title"> Computer Servers and DNS (Domain Name System)  </h1>
+        
+		<!-- The Top image with the server room-->
+		<figure id="img-div"> 
+            <img src="server-room.jpg" id="image" class="center">
+			<figcaption id="img-caption">Here you can see a server room with servers on either side of a hallway. These servers will be working on a variety of different tasks as you will see below.</figcaption>
+        </figure>
+		
+		<div id="Computer Server">
+			<h4>Computer Servers:</h4>
+		
+        	<p id="tribute-info">
+				A computer server or known more simply as a server, is a type of computer just like your <u>desktop</u>, <u>laptop</u>, or <u>phone</u>. Like the name suggests, <b>servers</b> serve other computers and help them do tasks they could not do. There are many types of servers that do different things and date back to the earliest days of computing. Servers were created for a variety of reasons, but one of the main reasons was to store data or information that could be acceded by other computers. This model is still largely how servers work to this very day! While any computer (such as a phone) could act as a server, these machines are not designed to operate such high workloads. A dedicated server typically runs a server program which works to help it complete its tasks or requests by computers. Two examples are <b>application servers</b> which run web apps (a web app is an application that does not run on your computer. Instead it communicates with an application sever to do all its tasks) like <a href="https://twitter.com/" target="_blank">twitter</a> and <b>web servers</b> which host websites ("hosting" is when you store all the information a website needs to work). There are also <b>mail servers</b> which handle email and send the messages to and from different computers. The most common types of server are <b>database servers</b> which simply hold data. These servers are what makes up cloud services such as iCloud, Google Drive, or Dropbox. 
+				<br><br> 
+				In summary, a server is just a special type of computer designed to do special tasks. They then communicate and work with other less powerful computers to get more things done than these devices could expect to do themselves. 
+        	</p>
+		
+			<!-- Here are the picutres of the diffrent devices-->
+			<div id="img-div" style="width: 100%; "> 
+				<img src="server-rack.png" class="small" style="margin-left: 45px" id="image">
+				<img src="pc.png" class="small" id="image">
+				<img src="laptop.png" class="small" id="image">
+				<img src="smartphone.png" class="small" id="image">
+			
+				<div id="img-caption">
+				<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^ Computer Server ^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ Desktop ^ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ Laptop ^ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^ Phone ^ <br><br> <b>All are computers but have different levels of power. A server has the most and helps Desktops and Phones do many things they could not do themselves.  </b>
+				</p> </div>
+			</div>
+		
+			<h2 class="mini-title">Find more information about Computer Servers this amazing <a href="https://www.youtube.com/watch?v=UjCDWCeHCzY" id="tribute-link" target="_blank"> Video </a> or at <a href="https://en.wikipedia.org/wiki/Server_(computing)" id="tribute-link" target="_blank">Wikipedia</a>  </h2>
+			
+		</div>
+		
+		<div id="DNS">
+			
+			<!-- Paul Photo-->
+			<div id="img-div" style="width: 18%;  float: right; margin-right: 10px; padding-left: 10px" class="row">
+				<img id="image" src="Paul_Mockapetris.jpeg" style="max-width: 100%; border: 2px solid var(--yellow)">
+				<p id="img-caption"><b>Paul Mockapetris</b></p>
+			</div>
+			
+			<h4> <b>DNS (Domain Name System):</b> </h4>
+			<p id="tribute-info" > 
+				The DNS is a system to store and locate information about websites more easily. Instead of having to remember the <a href="https://en.wikipedia.org/wiki/IP_address" target="_blank">IP address</a> of a web server (IP is just a special name for every computer) in which a website is located you can just remember its url. An example of this is that you can remember www.google.com instead of 172.217.2.196 (which is the IP of the google.com server). You can think of DNS like the <b>street address</b> to your house and an IP address as its <b>coordinates</b> on the globe. While they are both the exact same thing, the address is much easier to remember than the coordinates of your house. Before DNS, the people that ran the early internet had a document called <b>HOSTS.TXT</b> in which they wrote down the IP of every computer! Due to the number of sites growing, this had to change so <b>Paul Mockapetris</b> was tasked to develop a new system for storing IP addresses. In <b>1983</b>, DNS was created and became one of the original Internet Standards. 
+			</p>
+			
+			<p id="tribute-info">
+				<br>
+				
+				What <b>Mockapetris</b> created was the idea of <b>domains</b> <i>(the little things at the end of URLs like .com, .net, .org, .uk or .edu).</i> This idea allowed for websites to be categorized and stored in a way that they could quickly accessed. Instead of remembering the whole IP, you only needed the URL with a domain at the end. <br><br>
+				
+				How it works is that when you want to go to <b><a href="http://example.com/" target="_blank"> http://example.com/</a></b>, your computer (1) first checks to see if it already knows the location of this site (IP address information is stored on your computer for a limited time so if you need to visit the same site multiple times a day it is faster). If it does not have it stored, your computer asks the <b>Resolving Name Server</b> (2) which is often operated by your ISP and stores information about domains and IP addresses. The first thing this server does is it checks to see if it has information already stored. If it does, it sends the result to your computer which connects to the website. If it doesn't then it moves along to the <b>Root Name Server</b> (3). The root name server then refers the <b>Resolving Name Server</b> to a <b>Top Level Domain server</b> (4) (The specific one depends on the domain of the site. in this example it does to the .com TLD server). This domain name server then will refer you to an authoritative name server which actually knows the location or IP address of the site you wish to visit. The resolving name server takes that information and stores the IP address of this website before sending it to your computer. Once your computer has the IP address, you can connect to the server that hosts the site of <a href="http://example.com/" target="_blank"> http://example.com/</a>. <br><br>
+				
+				What is amazing is that this all happens in less than a second! Thanks to <b>Paul Mockapetris'</b> idea to create a DNS, you can easily connect to the millions of websites without having to remember the long strings of characters that actually represent the servers they are stored on. 
+			</p>
+		
+			
+			<div id="img-div" style="margin-top: 30px">
+				<div class="row" >
+					<img id="image" src="DNS-explenation.png" class="center" style="max-width: 50%; border: 5px solid var(--darkblu)">
+					<p style="text-align: center" id="img-caption">Here is an image describing how DNS works. You can see your computer on the left <br> and the Resolving Name Server in the middle doing the hard work of resolving the dns.</p>
+				</div>	
+			</div>
+		
+			<h2 class="mini-title">Find more information about the DNS system go to this: <a href="https://youtu.be/Rck3BALhI5c" id="tribute-link" target="_blank">Video</a> or <a href="https://en.wikipedia.org/wiki/Domain_Name_System" id="tribute-link" target="_blank"> Wikipedia </a></h2> 
+		</div>
+		
+		<div id="footer">
+			<p class="mini-title">Made by: Andres O. @ The American School Foundation (CDMX)<br> Published: September 17th, 2020 </p> 
+		</div>
+    
+	</div>
+
+</body>
+</html>
